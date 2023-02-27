@@ -1,8 +1,8 @@
 #!/bin/bash
 
-PHASE1=../../circuits/pot21_final.ptau
-BUILD_DIR=../../build/verify
-CIRCUIT_NAME=verify
+PHASE1=../../artifacts/pot20_final.ptau
+BUILD_DIR=../../build/pallas
+CIRCUIT_NAME=pallas
 
 if [ -f "$PHASE1" ]; then
     echo "Found Phase 1 ptau file"
@@ -26,7 +26,7 @@ echo "DONE ($((end-start))s)"
 
 echo "****GENERATING WITNESS FOR SAMPLE INPUT****"
 start=`date +%s`
-node "$BUILD_DIR"/"$CIRCUIT_NAME"_js/generate_witness.js "$BUILD_DIR"/"$CIRCUIT_NAME"_js/"$CIRCUIT_NAME".wasm input_verify.json "$BUILD_DIR"/witness.wtns
+node "$BUILD_DIR"/"$CIRCUIT_NAME"_js/generate_witness.js "$BUILD_DIR"/"$CIRCUIT_NAME"_js/"$CIRCUIT_NAME".wasm input_$CIRCUIT_NAME.json "$BUILD_DIR"/witness.wtns
 end=`date +%s`
 echo "DONE ($((end-start))s)"
 

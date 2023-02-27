@@ -1,4 +1,4 @@
-pragma circom 2.0.2;
+pragma circom 2.1.1;
 
 include "../node_modules/circomlib/circuits/comparators.circom";
 include "../node_modules/circomlib/circuits/bitify.circom";

@@ -3,6 +3,7 @@
  * https://o1-labs.github.io/proof-systems/specs/pasta.html represented with 
  * three 86-bit registers. 
  */
+pragma circom 2.1.1;
 
 function get_pallas_base(n, k) {
     assert((n == 86 && k == 3));

@@ -1,5 +1,5 @@
 pragma circom 2.0.2;
 
-include "../../circuits/ecdsa.circom";
+include "../../circuits/pasta.circom";
 
-component main {public [r, s, msghash, pubkey]} = ECDSAVerifyNoPubkeyCheck(64, 4);
+component main { public [a, b, c] } = Pallas(86, 3);
