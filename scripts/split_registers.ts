@@ -1,3 +1,9 @@
+/*
+ * Converts any sized number into its representation usig k registers, each of 
+ * size n-bits. Output to console in little-endian (least significant n bits 
+ * first). 
+ */
+
 const n: number = 86;
 const k: number = 3;
 
