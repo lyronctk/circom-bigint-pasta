@@ -1,8 +1,8 @@
 #!/bin/bash
 
 PHASE1=../../artifacts/pot20_final.ptau
-BUILD_DIR=../../build/pallas
-CIRCUIT_NAME=pallas
+BUILD_DIR=../../build/pallas_mult
+CIRCUIT_NAME=pallas_mult
 
 if [ -f "$PHASE1" ]; then
     echo "Found Phase 1 ptau file"

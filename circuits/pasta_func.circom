@@ -5,28 +5,30 @@
  */
 pragma circom 2.1.1;
 
-function get_pallas_base(n, k) {
+function getPallasBase(n, k) {
     assert((n == 86 && k == 3));
-    var ret[100];
-    ret[0] = 15683488189232138132914177;
-    ret[1] = 588853276709;
-    ret[2] = 4835703278458516698824704;
+    var ret[3] = [
+        15683488189232138132914177, 
+        588853276709, 
+        4835703278458516698824704
+    ];
     return ret;
 }
 
-function get_pallas_scalar(n, k) {
+function getPallasScalar(n, k) {
     assert((n == 86 && k == 3));
-    var ret[100];
-    ret[0] = 24975960799879914347036673;
-    ret[1] = 588853276710;
-    ret[2] = 4835703278458516698824704;
+    var ret[3] = [
+        24975960799879914347036673,
+        588853276710,
+        4835703278458516698824704
+    ];
     return ret; 
 }
 
-function get_vesta_base(n, k) {
-    return get_pallas_scalar(n, k);
+function getVestaBase(n, k) {
+    return getPallasScalar(n, k);
 }
 
-function get_vesta_scalar(n, k) {
-    return get_pallas_base(n, k);
+function getVestaScalar(n, k) {
+    return getPallasBase(n, k);
 }
