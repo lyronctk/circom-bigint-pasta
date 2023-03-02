@@ -1,5 +1,6 @@
 /*
- * From https://github.com/yi-sun/circom-pairing/blob/master/circuits/bigint.circom
+ * BigInt templates. From 
+ * https://github.com/yi-sun/circom-pairing/blob/master/circuits/bigint.circom
  */
 pragma circom 2.1.1;
 

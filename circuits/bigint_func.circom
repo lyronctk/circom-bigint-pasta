@@ -1,5 +1,6 @@
 /*
- * From https://github.com/yi-sun/circom-pairing/blob/master/circuits/bigint_func.circom
+ * BigInt utility functions. From 
+ * https://github.com/yi-sun/circom-pairing/blob/master/circuits/bigint_func.circom
  */
 pragma circom 2.1.1;
 
